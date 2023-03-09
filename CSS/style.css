@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');    
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    --main: #142A3F;
+    --star: #FFC531
+}
+
+body {
+    overflow-x: hidden;
+    background: #142A3F;
+}
+
+
+
+/* -------------------------------------- STYLE NAVEGATION --------------------------------------------------- */
+
+.navbar{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 30px 1300px;
+    background-color: #FFC531;
+    justify-content: space-between;
+    z-index: 1111;
+    transition: 0.5s ease; 
+}
+
+ol{
+    display: flex;
+    margin: auto;    
+}
+
+ol li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+ol li a{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+ol li:hover a{
+    color: rgb(218, 218, 218);
+}
+
+/* -------------------------------------- ABOUT ME --------------------------------------------------- */
+
+.view{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+ .home{
+    display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+ }
+
+.banner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.highlights{
+    width: 75%;
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+}
+
+.highlights h3 a{
+    color: aliceblue;
+    text-decoration: none;
+    display: inline;
+    font-size: 2vw;
+    padding: 5px 0px;
+    font-weight: lighter;
+}
+
+.highlights h1{
+    color: var(--star);
+     font-size: 5vw;
+     text-align: left;
+     font-weight: bold;
+}
+
+.jojo img{
+    margin-top: -14vh;
+    float: right;
+    width: 45%;
+}
+
+
+.highlights .tagline{
+    color: rgb(193, 212, 228);
+    font-size: 1.8vw;
+    text-align: left;
+    font-weight: normal;
+}
+
+.highlights .button{
+    position: absolute;
+    left: 7%;
+    transform: translateX(-50%);
+    font-weight: 800;
+    padding: 5px 20px;
+    font-size: 1.5vw;
+    margin-top: 1.2em;
+    color: var(--main);
+    background: var(--star);
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition:  0.3s ease; 
+}
+
+.highlights .button a{
+    text-decoration: none;
+    color: #142A3F;
+}
+
+.highlights .button:hover{
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    background: #ffdd87;
+}
+
+/* -------------------------------------- CARD --------------------------------------------------- */
+
+.bloc{
+    background: #FFC531;
+    text-align: center;
+    margin-top: -25vh;
+    margin-bottom: 0;
+}
+
+.bloc h1{
+    font-family: 'Poppins'sans-serif;
+    font-size: 8vw;
+
+}
+.card{
+    background: #ffffff;
+    box-shadow: 0px 2px 5px #34567573;
+    border-radius: 10px;
+    width: 25%;
+    margin: 20px;
+}
+
+.containercards{
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediacard{
+    background: url(../Imagens/primeiro-projeto-html.png) center/cover;
+    height: 350px;
+    width: 100%;
+}
+
+.mediacard2{
+    background: url(../Imagens/projeto-html-css.png) center/cover;
+    height: 350px;
+    width: 100%;
+}
+
+.mediacard3{
+    background: url(../Imagens/Meu-melhor-projeto.png) center/cover;
+    height: 350px;
+    width: 100%;
+}
+
+.topcard {
+    text-align: left;
+    padding: 20px;
+    padding-top: 20px;
+}
+
+
+.mediacard:hover{
+    background-color: #142A3F;
+    opacity: 0.5;
+}
+
+.mediacard2:hover{
+    background-color: #142A3F;
+    opacity: 0.5;
+}
+
+.mediacard3:hover{
+    background-color: #142A3F;
+    opacity: 0.5;
+}
+/* -------------------------------------- FOOTER --------------------------------------------------- */
+
+footer {
+    background-color: #15283a;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+  }
