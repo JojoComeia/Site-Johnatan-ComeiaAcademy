@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Contato</title>
+</head>
+
+
+    <form onsubmit="event.preventDefault()">
+        <label for="input-nome">Nome</label>
+        <input type="text" name="input-nome" id="input-nome" placeholder="Seu Nome" required minlength="2">
+
+
+        <label for="input-email">E-mail</label>
+        <input type="email" name="input-email" id="input-email" placeholder="SeuEmail@email.com" required>
+
+
+        <label for="input-tel">Telefone</label>
+        <input type="tel" name="input-tel" id="input-tel" placeholder="(99) 99999-9999" required pattern="^\(\d{2}\) \d{5}-\d{4}$" maxlength="15">
+
+        
+        <label for="input-msg">Mensagem</label>
+        <textarea name="input-msg" id="input-msg" placeholder="Sua Mensagem" cols="30" rows="10"></textarea>
+
+    <center>
+        <input type="submit" value="ENVIAR" class="button" onclick="enviarFormulario()">
+    </center>
+</form>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
